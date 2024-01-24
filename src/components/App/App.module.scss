@@ -1,0 +1,45 @@
+$bg-app: #f3f7fa;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: $bg-app;
+  font-family: "Open Sans", sans-serif;
+  &__main {
+    padding: 0px 150px 20px 150px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .app {
+    &__main {
+      padding: 0px 100px 10px 100px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .app {
+    &__main {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 60px 10px 60px;
+      gap: 10px;
+    }
+  }
+}
+
+@media all and (max-width: 470px) {
+  .app {
+    &__main {
+      padding: 0px 10px 10px 10px;
+    }
+  }
+}

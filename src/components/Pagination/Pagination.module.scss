@@ -1,0 +1,39 @@
+$bg-checkbox-checked: #2196f3;
+$bg-white: #ffffff;
+
+.pagination {
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    background: $bg-checkbox-checked;
+    cursor: pointer;
+    color: $bg-white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .pagination {
+    &__button {
+      font-size: 10px;
+      height: 40px;
+    }
+  }
+}
+
+@media all and (max-width: 470px) {
+  .pagination {
+    &__button {
+      font-size: 9px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+$bg-white: #ffffff;
+$shaddow: #e5e5e5;
+$text-price: #2196f3;
+$text-ticket: #a0b0b9;
+$text-time: #4a4a4a;
+
+.ticket {
+  width: 100%;
+  background: $bg-white;
+  border-radius: 5px;
+  padding: 20px 25px;
+  box-shadow: 0px 4px 5px 0px $shaddow;
+
+  .ticket__header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    color: $text-price;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .ticket__image {
+    display: flex;
+    align-items: center;
+  }
+
+  .ticket__data {
+    display: grid;
+    grid-template-columns: 30% 40% 25%;
+    row-gap: 15px;
+  }
+
+  .ticket__item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  .ticket__towns {
+    color: $text-ticket;
+    font-size: 12px;
+  }
+
+  .ticket__time {
+    color: $text-time;
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .ticket {
+    padding: 14px 15px;
+
+    .ticket__header {
+      font-size: 15px;
+      margin-bottom: 13px;
+    }
+    .ticket__image {
+      zoom: 0.8;
+    }
+    .ticket__data {
+      row-gap: 10px;
+    }
+    .ticket__towns {
+      font-size: 10px;
+    }
+
+    .ticket__time {
+      font-size: 11px;
+    }
+  }
+}
+
+@media all and (max-width: 470px) {
+  .ticket {
+    .ticket__towns {
+      font-size: 8px;
+    }
+
+    .ticket__time {
+      font-size: 9px;
+    }
+  }
+}

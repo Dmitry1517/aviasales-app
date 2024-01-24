@@ -1,0 +1,56 @@
+$bg-checkbox-checked: #2196f3;
+$bg-white: #ffffff;
+$buttons-border: #dfe5ec;
+$text-white: #ffffff;
+$button-text: #4a4a4a;
+
+.buttons {
+  width: 100%;
+  display: flex;
+
+  .button {
+    border: none;
+    width: 33.333%;
+    height: 50px;
+    background: $bg-white;
+    border: 1px solid $buttons-border;
+    cursor: pointer;
+    color: $button-text;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .button_active {
+    background: $bg-checkbox-checked;
+    color: $text-white;
+    border: 1px solid $bg-checkbox-checked;
+  }
+  .button_left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .button_right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .buttons {
+    .button {
+      height: 40px;
+      font-size: 9px;
+      letter-spacing: 0.6px;
+    }
+  }
+}
+
+@media all and (max-width: 470px) {
+  .buttons {
+    .button {
+      font-size: 8px;
+      letter-spacing: 0.6px;
+    }
+  }
+}
