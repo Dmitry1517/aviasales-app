@@ -15,6 +15,11 @@ $bg-app: #f3f7fa;
     grid-template-columns: auto 1fr;
     column-gap: 20px;
   }
+  &__loading {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 @media all and (max-width: 992px) {
